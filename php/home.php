@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <header>
-    <meta name="description" content="燃料代計算">
+    <meta name="description" content="動画検索">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
@@ -16,6 +16,28 @@
 <body>
     <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <!--ここから-->
-    
+    <div class="space_f"></div>
+    <div class="title">動画検索システム</div>
+    <div class="space"></div>
+    <div class="search">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6">
+                <form action="result.php" method="GET" class="search_form" name="search_form">
+                    <input type="text" class="form-control form-control-lg" placeholder="キーワード" aria-label=".form-control-lg" name="keyword" pattern= "[^#&?=%\+_'.,]+">
+                </form>
+            </div>
+            <div class="col-2 d-grid mx-auto">
+                <button type="submit" class="btn btn-info btn-lg search_button">検索</button>
+            </div>
+        </div>
+    </div>
+    <div class="space_l"></div>
+
+
+    <div class="footer">
+        ©yutasato&yukioda
+    </div>
     <!--ここまで-->
-<body>
+
+</body>

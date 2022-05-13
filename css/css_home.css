@@ -1,0 +1,52 @@
+.body{
+    width: 100vw;
+    background-color: #EDE7FF;
+    font-family: "sans-serif";
+}
+
+.search{
+    width: 100vw;
+    background-color: #EDE7FF;
+    font-family: "sans-serif";
+}
+
+.serach_form{
+    font-size: 7.5vh;
+}
+
+.search_button{
+    font-family: "sans-serif";
+    font-weight: bolder;
+    
+}
+
+.space{
+    background-color: #EDE7FF;
+    height: 9vh;
+}
+
+.space_f{
+    background-color: #EDE7FF;
+    height: 30vh;
+}
+
+.space_l{
+    background-color: #EDE7FF;
+    height: 27.8vh;
+}
+
+.footer{
+    background-color: #525252;
+    padding-top: 4vh;
+    height: 14.5vh;
+    font-size: 4.2vh;
+    color: white;
+    text-align: center;
+}
+
+.title{
+    background-color: #EDE7FF;
+    text-align: center;
+    font-size: 7.5vh;
+    font-weight: bolder;
+}
