@@ -1,9 +1,26 @@
-$(function() {
-    let tabs = $(".tab"); // tabのクラスを全て取得し、変数tabsに配列で定義
-    $(".tab").on("click", function() { // tabをクリックしたらイベント発火
-      $(".active").removeClass("active"); // activeクラスを消す
-      $(this).addClass("active"); // クリックした箇所にactiveクラスを追加
-      const index = tabs.index(this); // クリックした箇所がタブの何番目か判定し、定数indexとして定義
-      $(".content").removeClass("show").eq(index).addClass("show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
-    })
-  })
+document.addEventListener('DOMContentLoaded', function(){
+  tabs = document.querySelectorAll('#js-tab li');
+  for(i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener('click', tabSwitch, false);
+  }
+
+  function tabSwitch(){
+    tabs = document.querySelectorAll('#js-tab li');
+    var node = Array.prototype.slice.call(tabs, 0);
+    node.forEach(function (element) {
+      element.classList.remove('active');
+    });
+    this.classList.add('active');
+
+    content = document.querySelectorAll('.tab-content');
+    var node = Array.prototype.slice.call(content, 0);
+    node.forEach(function (element) {
+      element.classList.remove('active');
+    });
+
+    const arrayTabs = Array.prototype.slice.call(tabs);
+    const index = arrayTabs.indexOf(this);
+    
+    document.querySelectorAll('.tab-content')[index].classList.add('active');
+  };
+});
