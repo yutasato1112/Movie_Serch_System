@@ -22,14 +22,10 @@
     <div class="search">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-6">
-                <form action="result.php" method="GET" class="search_form" name="search_form">
+                <form action="result.php" method="GET" class="search_form area" name="search_form">
                     <input type="text" class="form-control form-control-lg" placeholder="キーワード" aria-label=".form-control-lg" name="keyword" pattern= "[^#&?=%\+_'.,]+">
+                    <button type="submit" class="btn btn-info btn-lg search_button">検索</button>
                 </form>
-            </div>
-            <div class="col-2 d-grid mx-auto">
-                <button type="submit" class="btn btn-info btn-lg search_button">検索</button>
-            </div>
         </div>
     </div>
     <div class="space_l"></div>

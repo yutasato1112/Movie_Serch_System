@@ -50,3 +50,11 @@
     font-size: 7.5vh;
     font-weight: bolder;
 }
+.area{
+    display: flex;
+}
+.row{
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
