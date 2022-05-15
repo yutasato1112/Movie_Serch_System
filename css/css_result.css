@@ -65,3 +65,15 @@ ul{
   .tab-content.active{
     display: block;
   }
+
+.cardUnit{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px 10px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.card{
+    background-color: #E2E2E2;
+}

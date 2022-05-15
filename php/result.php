@@ -35,7 +35,7 @@
 
         $params['q'] = $keyword;
         $params['type'] = 'video';
-        $params['maxResults'] = 10;
+        $params['maxResults'] = 50;
 
         $keyword = htmlspecialchars($keyword);
         $videos = [];
@@ -65,9 +65,10 @@
   
         <div class="wrap-tab-content">
             <div class="tab-content active">
-                <p>タブ1タブ1タブ1</p>
                 <?php 
+                    print "<ul class=cardUnit>";
                     foreach($videos as $video) :
+                        print "<li class=card>";
                         echo '<div class="movieBox">';
                         echo '<a class="movieLink" href="https://www.youtube.com/watch?v=' . $video['id']['videoId'] . '">';
                         echo '<div class="thums">';
@@ -79,7 +80,9 @@
                         echo '</div>';
                         echo '</a>';
                         echo '</div>';
+                        print "</li>";
                     endforeach;
+                    print "</ul>";
                 ?>
             </div>
 

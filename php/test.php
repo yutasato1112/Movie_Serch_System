@@ -17,7 +17,7 @@ if( isset($_POST['keyword'])) {
 
 $params['q'] = $keyword;
 $params['type'] = 'video';
-$params['maxResults'] = 10;
+$params['maxResults'] = 50;
 
 $keyword = htmlspecialchars($keyword);
 $videos = [];
@@ -98,7 +98,9 @@ a.movieLink:hover {
 <div id="container">
     <div id="main_box" class="clearfix">
     <?php 
+    print "<ul class=cardUnit>";
     foreach($videos as $video) :
+        print "<li class=card>";
         echo '<div class="movieBox">';
         echo '<a class="movieLink" href="https://www.youtube.com/watch?v=' . $video['id']['videoId'] . '">';
         echo '<div class="thums">';
@@ -110,7 +112,9 @@ a.movieLink:hover {
         echo '</div>';
         echo '</a>';
         echo '</div>';
+        print "</li>";
     endforeach;
+    print "</ul>";
     ?>
     </div>
 </div>
