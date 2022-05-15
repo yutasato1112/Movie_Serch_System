@@ -96,12 +96,6 @@ a.movieLink:hover {
 </head>
 <body>
 <div id="container">
-    <div id="header">
-        <form method="post">
-            <input type="text" id="keyword" name="keyword" value="<?=$keyword?>" />
-            <input type="submit" value="検索" />
-        </form>
-    </div>
     <div id="main_box" class="clearfix">
     <?php 
     foreach($videos as $video) :
